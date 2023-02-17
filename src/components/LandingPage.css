@@ -1,0 +1,129 @@
+.landingPage {
+  width: 99.1vw;
+  height: 102.2vh;
+  background: #9400d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+input {
+  margin: 1rem;
+  border-radius: 1rem;
+  background: #fff;
+  width: 13rem;
+  height: 1.5rem;
+  border: none;
+}
+
+.votePage {
+  width: 100%;
+  height: 98.8vh;
+  background: darkgray;
+  margin-top: -1.3rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.isDisplay {
+  display: flex;
+}
+
+.noDisplay {
+  display: none;
+}
+.wrongUser {
+  color: red;
+  font-size: 2rem;
+}
+
+.party {
+  width: 20rem;
+  height: 25rem;
+  background: url("../img/pexels-fwstudio-129731.jpg") no-repeat center
+    center/cover;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.parties {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+img {
+  width: 7rem;
+  height: 7rem;
+}
+
+.voteNow,
+.cancel,
+.ok,
+.logout {
+  cursor: pointer;
+  background: #9400d3;
+  width: 7rem;
+  height: 2rem;
+  border: none;
+  color: #fff;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logout {
+  width: 10rem;
+  height: 4rem;
+  font-size: 2rem;
+}
+.voteNow:hover,
+.cancel:hover,
+.ok:hover,
+.logout:hover {
+  opacity: 0.8;
+}
+.loginBtn {
+  cursor: pointer;
+}
+.isButton {
+  display: flex;
+}
+.noButton {
+  display: none;
+}
+.secondButtons {
+  flex-direction: column;
+}
+.verifyButtons {
+  display: flex;
+}
+.accepted {
+  width: 100vw;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* transform: translate(-50%, 0); */
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #9400d3;
+  font-size: 5rem;
+  z-index: 1;
+}
+
+@media (max-width: 1090px) {
+  .votePage,
+  .landingPage {
+    height: 100%;
+  }
+}
