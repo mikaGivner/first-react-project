@@ -319,25 +319,28 @@ export default function LandingPage() {
   return (
     <div>
       <div className={landingPageClass}>
-        <input
-          onChange={newName}
-          onClick={cleanErrors}
-          type="text"
-          placeholder="name"
-        />
-        <input
-          onChange={newPassword}
-          onClick={cleanErrors}
-          type="password"
-          placeholder="password"
-        />
-        <button className="loginBtn" onClick={validUser}>
-          log in
-        </button>
-        <div className="wrongUser">{fullData}</div>
-        <div className="wrongUser">{wrongUser}</div>
+        <div className="wrapper">
+          <h2>Welcome! Please fill your details</h2>
+          <input
+            onChange={newName}
+            onClick={cleanErrors}
+            type="text"
+            placeholder="name"
+          />
+          <input
+            onChange={newPassword}
+            onClick={cleanErrors}
+            type="password"
+            placeholder="password"
+          />
+          <button className="loginBtn" onClick={validUser}>
+            log in
+          </button>
+          <div className="wrongUser">{fullData}</div>
+          <div className="wrongUser">{wrongUser}</div>
+        </div>
       </div>
-      <VotePage className={votePageClass}></VotePage>
+      <VotePage className={votePageClass} user={newName}></VotePage>
     </div>
   );
 }

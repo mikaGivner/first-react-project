@@ -3,10 +3,10 @@ import "./LandingPage.css";
 export default function VoteAccepted(props) {
   return (
     <div className={props.className}>
-      {props.p}
-      <button className="logout" onClick={props.onClick}>
+      Thank you for your vote
+      <a href="./LandingPage.js" className="logout">
         Log-out
-      </button>
+      </a>
     </div>
   );
 }

@@ -1,20 +1,44 @@
 .landingPage {
-  width: 99.1vw;
+  width: 100%;
   height: 102.2vh;
-  background: #9400d3;
+  /* background-image: url("https://images.pexels.com/photos/7130475/pexels-photo-7130475.jpeg"); */
+  background-image: url("../img/תמונה1.png");
+  background-size: cover;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 2;
 }
+.wrapper {
+  width: 50vmin;
+  height: 50vmin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2222226f;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  color: #e4e4e4;
+}
 input {
   margin: 1rem;
-  border-radius: 1rem;
-  background: #fff;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
   width: 13rem;
   height: 1.5rem;
-  border: none;
+  font-size: 1rem;
+  color: #fff;
 }
 
 .votePage {
@@ -37,7 +61,7 @@ input {
 }
 .wrongUser {
   color: red;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .party {
@@ -91,6 +115,10 @@ img {
 }
 .loginBtn {
   cursor: pointer;
+  width: 12rem;
+  border-radius: 1rem;
+  height: 2rem;
+  margin-top: 3rem;
 }
 .isButton {
   display: flex;
@@ -121,9 +149,9 @@ img {
   z-index: 1;
 }
 
-@media (max-width: 1090px) {
+/* @media (max-width: 1090px) {
   .votePage,
   .landingPage {
     height: 100%;
   }
-}
+} */
